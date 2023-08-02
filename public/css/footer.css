@@ -1,0 +1,52 @@
+.home__footer{
+    background-color: #ffffff;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.home__footer__medios{
+    padding-top: 30px;
+    margin: 0 10px 40px 10px;
+}
+
+.home__footer__card{
+    color: var(--Celeste);
+    font-size: 2em;
+}
+
+.home__footer__card i{
+    margin-bottom: 10px;
+}
+
+.home__footer__medios p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.home__footer__envios__regalos{
+    color: var(--Celeste);
+    font-size: 2em;
+}
+
+.home__footer__envios p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.home__footer__envios{
+    margin: 0 10px 40px 10px;
+}
+
+.home__footer__seguridad__escudo{
+    color: var(--Celeste);
+    font-size: 2em;
+}
+
+.home__footer__seguridad p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.home__footer__seguridad{
+    margin: 0 10px 40px 10px;
+}
