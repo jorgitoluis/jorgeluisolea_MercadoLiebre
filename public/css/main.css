@@ -1,7 +1,65 @@
+.home__main{
+    background-color: var(--GrisClaro);
+    padding-bottom: 20px;
+    
+}
+
+
+.home__main__banner{
+    width: 100%;
+}
+
+.home__main h3{
+    margin-left: 10px;
+    color: var(--GrisOscuro);
+}
+
+.home__main__articulo{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .home__main__articulo__valores__descuentos{
     font-size: 16px;
 }
 
 .home__main__articulo__valores__producto{
     font-size: 16px;
+    display: none;
+}
+
+.home__main__articulo__section{
+    margin: 10px;
+}
+
+.home__main__articulo__valores{
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+.home__main__articulo__section i{
+    color: var(--Verde);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid var(--Verde);
+    padding: 10px;
+}
+
+.home__main__articulo__valores__descuentos{
+    margin: 0;
+    color: var(--Verde);
+}
+
+@media (min-width:769px) {
+
+    .home__main__articulo__valores__producto{
+        display: block;
+    
+    }
+
+    .home__main__articulo__section{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
 }
