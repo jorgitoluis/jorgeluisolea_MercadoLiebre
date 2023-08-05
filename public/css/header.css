@@ -1,76 +1,219 @@
-.home__header{
+.home__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     background-color: var(--Amarillo);
     padding-bottom: 15px;
     padding-top: 15px;
-    
-}
-    
-
-.home__header__logo{
-    padding-top: 20px;
-    width: 50%;
-    margin-top: 20px;
-    margin-left: 15px;
 
 }
 
-.home__header__buscador{
-    padding-top: 10px;
-    margin-left: 20px;
+.home__header__encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.home__header__menu{
+
+.home__header__logo {
+    padding: 15px;
+    padding-right: 5px;
+    width: 40%;
+
+
+}
+
+.home__header__buscador {
+    position: relative;
+    padding: 15px;
+    margin-left: 5px;
+    width: 40%;
+
+}
+
+.home__header__buscador__form {
+    margin-right: 5px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+.home__header__menu {
     display: none;
- }
-
-
-.home__header__buscador i{
-    background-color: white;
-    padding: 5px;
 }
 
-.home__header__cuotas{
+
+.home__header__buscador i {
+    background-color: white;
+    padding: 1px;
+    position: absolute;
+    top: 22px;
+    right: 18px;
+    font-size: 17px;
+
+}
+
+.home__header__cuotas {
+    width: 100%;
     font-size: 12px;
     display: inline;
-    text-align: center;  
+    text-align: center;
 }
 
-.home__header__menu__opciones1{
+.home__header__menu__opciones1 {
     text-align: left;
     padding: 0px;
-    
+
 }
 
-.home__header__menu__opciones2{
+.home__header__menu__opciones2 {
     text-align: left;
     padding: 0px;
 }
 
-.home__header__burger{
+.home__header__burger {
     font-size: 20px;
     margin: auto;
     text-align: center;
     color: var(--GrisClaro);
-    
+
 }
 
-.home__header__burger i{
+.home__header__burger i {
     padding: 8px;
     background-color: var(--Celeste);
     border-radius: 5px;
 
 }
 
+/* ///////////////////////////////////////////////////tablet ///////////////////////////////////////////////////// */
 
+@media (min-width:481px) {
+
+    .home__header {
+        margin: 0 auto;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 10px;
+
+    }
+
+    .home__header__burger i {
+        display: none;
+
+    }
+
+    .home__header__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .home__header__menu ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 9px;
+        gap: 5px;
+        margin: 5px;
+    }
+
+    .home__header__logo {
+        width: 25%;
+        padding: 0px;
+
+    }
+
+    .home__header__buscador {
+        width: 30%;
+    
+    }
+    
+    .home__header__buscador__form{
+        width: 95%;
+        padding: 7px;
+    
+    }
+    
+    
+
+    .home__header__cuotas {
+        width: 30%;
+        font-size: 8px;
+
+    }
+
+    .home__header__encabezado {
+        gap: 0;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .home__header__logo img{
+        width: 100%;
+    }
+}
+
+/* ///////////////////////////////////////////////////desktop////////////////////////////////////////////////// */
 @media (min-width:769px) {
 
-    .home__header__menu{
-        display: block;
-     }
-
-    .home__header__burger{
+    .home__header__burger {
         display: none;
     }
     
-}
+    .home__header__buscador i{
+        top: 25px;
+        right: 0;
+        font-size: 15px;
 
+    }
+
+    .home__header__buscador {
+        display: flex;
+        justify-content: left;
+        width: 18%;
+        
+     }
+
+     .home__header__cuotas {
+        font-size: 15px;
+
+    }
+
+
+    .home__header__menu ul li{
+        font-size: 12px;
+        margin: 0 11px;
+        margin-top: 10px;
+        
+    }   
+
+    .home__header__menu__opciones1{
+        padding: 3px;
+
+    }
+    
+    .home__header__buscador__form{
+        width: 100%;
+        padding: 7px;
+        margin: 5px;   
+
+    }
+
+
+}   
+
+@media (min-width:1024px) {
+
+    .home__header__buscador i{
+        top: 25px;
+        right: 30px;
+        font-size: 15px;
+    }
+
+}

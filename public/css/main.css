@@ -1,10 +1,10 @@
 .home__main{
+    display: flex;
+    flex-wrap: wrap;
     background-color: var(--GrisClaro);
     padding-bottom: 20px;
-    
+    align-items: center;
 }
-
-
 .home__main__banner{
     width: 100%;
 }
@@ -12,9 +12,12 @@
 .home__main h3{
     margin-left: 10px;
     color: var(--GrisOscuro);
+    width: 100%;
 }
 
 .home__main__articulo{
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     margin: 0 auto;
 }
@@ -33,12 +36,19 @@
 }
 
 .home__main__articulo__valores{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
     border-top: 1px solid #ebebeb;
     background-color: white;
     padding: 15px;
 }
 
 .home__main__articulo__section i{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: -15px;
     color: var(--Verde);
     background-color: white;
     border-radius: 50%;
@@ -46,12 +56,45 @@
     padding: 10px;
 }
 
-.home__main__articulo__valores__descuentos{
-    margin: 0;
-    color: var(--Verde);
+.home__main__articulo__valores__precio{
+    width: 30%;
+    margin: 0 ;
+    font-size: 18px;
+    line-height: 24px;
 }
 
+.home__main__articulo__valores__descuentos{
+    margin: 0;
+    text-align: center;
+    color: var(--Verde);
+    width: 70%;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 5px;
+
+
+}
+
+@media (min-width:481px) {
+
+    .home__main__articulo{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .home__main__articulo__section{
+        width: 45%;
+    }
+}
 @media (min-width:769px) {
+
+    .home__main{
+        margin: 0 auto;
+        width: 100%;
+    }
 
     .home__main__articulo__valores__producto{
         display: block;
@@ -60,6 +103,38 @@
 
     .home__main__articulo__section{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22%;
+        margin: 0 auto 10px;
+
+
     }
     
-}
+    .home__main__articulo{
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 100%;
+        
+
+    }
+
+    .home__main__articulo__section i{
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        padding: 5px;
+    }
+
+    .home__main__articulo__valores{
+        padding: 21px 3px;
+            
+    }
+
+    .home__main__articulo__valores i{
+        right: 8px;
+        top: -11px;
+
+    }
+
+}   
