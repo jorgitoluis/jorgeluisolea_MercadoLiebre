@@ -1,0 +1,17 @@
+.form__formLogin{
+    display: flex;
+    justify-content: center;
+    max-width: 450px;
+    margin: 25px auto;
+    background-color: var(--GrisClaro);
+}
+
+.form__formLogin .form__Box__form__inp{
+    margin: 30px 0;
+}
+
+.form__Box__form__boton .form__Box__form__inp{
+    background-color: var(--Celeste);
+    margin: 30px 0;
+    color: white;
+}

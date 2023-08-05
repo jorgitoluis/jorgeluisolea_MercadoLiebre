@@ -1,0 +1,82 @@
+.form__Box{
+    display: flex;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+    margin: 10px auto;
+    max-width: 450px;
+    justify-content: center;
+    background-color: var(--GrisClaro);
+   
+}
+.form__Box form{
+    width: 100%;
+}
+.form__Box h2{
+    margin: 10px;
+    background-color: var(--Amarillo);
+    text-align: center;
+}
+
+.form__Box__form__inp input{
+    text-transform: capitalize;
+    width: 90%;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+   
+}
+.form__Box__form__perfilUsuario{
+    margin: 10px  ;
+}
+
+.form__Box__form__perfilUsuario label{
+    margin-right: 10px;
+}
+
+.form__Box__form__perfilUsuario h4{
+    margin: 5px 0;
+}
+.form__Box__form__perfilUsuario input{
+    margin: 10px 15px;
+}
+
+.form__Box__form__inp{
+    margin: 15px 10px; 
+}
+
+.form__Box__form__intereses{
+   margin: 10px  ;
+
+}
+
+.form__Box__form__boton button{
+    border: none;
+    color: var(--GrisClaro);
+    background-color: var(--Celeste);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form__Box__form__intereses h4{
+    margin: 10px 0;
+}
+.form__Box__form__intereses input{
+    margin: 20px;
+}
+
+.form__Box__form__boton button a{
+    color: var(--GrisClaro);
+}
+
+.form__Box__form__boton{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Amarillo);
+    
+}
+
+.form__Box__form__boton button:active{
+    background-color: var(--Azul);
+}
+
