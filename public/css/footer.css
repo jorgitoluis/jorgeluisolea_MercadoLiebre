@@ -50,3 +50,37 @@
 .home__footer__seguridad{
     margin: 0 10px 40px 10px;
 }
+
+@media (min-width:769px) {
+    .home__footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .home__footer__medios{
+        width: 30%;
+        padding: 0;
+    }
+
+    .home__footer__envios{
+        width: 30%;
+    }
+
+    .home__footer__seguridad{
+        width: 30%;
+    }
+
+    .home__footer__card:hover {
+        color: var(--Amarillo);
+    }
+
+    .home__footer__envios__regalos:hover {
+        color: var(--Amarillo);
+    }
+    
+    .home__footer__seguridad__escudo:hover {
+        color: var(--Amarillo);
+    }
+
+}

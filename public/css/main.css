@@ -28,20 +28,40 @@
 
 .home__main__articulo__valores__producto{
     font-size: 16px;
-    display: none;
+    overflow: hidden;
+    height: 0;
+    transition: all 1s ease;
+
 }
 
-.home__main__articulo__section{
-    margin: 10px;
+.home__main__articulo__section:hover .home__main__articulo__valores__producto{
+    height: 30px;
 }
+
 
 .home__main__articulo__valores{
     display: flex;
+    justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
     border-top: 1px solid #ebebeb;
     background-color: white;
     padding: 15px;
+}
+
+.home__main__articulo__valores i:hover{
+    animation: rotate 1.5s linear;
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(0);
+      }
+      50% {
+        transform: rotate(-90deg);
+      }
+      100% {
+        transform: rotate(0);
+  }
 }
 
 .home__main__articulo__section i{
@@ -56,11 +76,18 @@
     padding: 10px;
 }
 
+.home__main__articulo__section{
+    margin: 10px;
+    
+}
+
 .home__main__articulo__valores__precio{
+
     width: 30%;
     margin: 0 ;
     font-size: 18px;
     line-height: 24px;
+
 }
 
 .home__main__articulo__valores__descuentos{
@@ -75,6 +102,8 @@
 
 }
 
+/* ////////////////// tablet//////////////////*/
+
 @media (min-width:481px) {
 
     .home__main__articulo{
@@ -83,12 +112,27 @@
         justify-content: space-evenly;
         flex-direction: row;
         flex-wrap: wrap;
+        
     }
     
     .home__main__articulo__section{
         width: 45%;
+        transition: all 1s ease;
     }
+
+    .home__main__articulo__section:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .home__main__articulo__valores__producto{
+        display: block; 
+    }
+
 }
+
+
+/* //////////////////////////desktop/////////////// */
+
 @media (min-width:769px) {
 
     .home__main{
@@ -96,16 +140,9 @@
         width: 100%;
     }
 
-    .home__main__articulo__valores__producto{
-        display: block;
-    
-    }
-
     .home__main__articulo__section{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 22%;
         margin: 0 auto 10px;
-
 
     }
     
@@ -114,8 +151,6 @@
         margin: 0 auto;
         flex-wrap: wrap;
         width: 100%;
-        
-
     }
 
     .home__main__articulo__section i{
@@ -128,6 +163,7 @@
 
     .home__main__articulo__valores{
         padding: 21px 3px;
+        display: flex;
             
     }
 
@@ -136,5 +172,11 @@
         top: -11px;
 
     }
-
+    
+    .home__main__articulo__valores{
+        display: flex;
+    }
+       
 }   
+
+
